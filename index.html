@@ -108,7 +108,7 @@ $( "#start" ).click(function() {
     firebase.database().ref('SID/' + $("#serialNum").val()+'/').once('value').then(function(snapshot) {
       month = snapshotToArray(snapshot);
       var sn = $("#serialNum").val();
-      alert(sn);
+      //alert(sn);
       localStorage.setItem("sid",$("#serialNum").val());
       window.location = "viewer.html";
       //localStorage.setItem("sid",$("#serialNum").val());
